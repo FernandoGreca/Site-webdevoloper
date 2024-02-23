@@ -19,8 +19,8 @@ body {
     max-width: 1240px;
     margin: 0 auto;
     background-color: #18181B;
-
     justify-content: center;
+    height: 100vh;
 }
 
 header img {
@@ -34,6 +34,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 p {
     text-align: justify;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .flex {
@@ -61,8 +66,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0 70px 0;
-    max-width: 1240px;
+    padding: 40px 4%;
 }
 header .logo img {
     max-width: 150px;
@@ -95,10 +99,10 @@ header button:hover {
 /*   Estilo main topo   */
 
 main {
-    display: inline-block;
+    display: inline-block; 
     max-width: 1240px;
     margin: auto;
-    padding: 5rem 1rem 3rem 1rem;
+    padding: 40px 4%;
     margin-top: 1rem;
     align-items: center;
     gap: 2rem;
