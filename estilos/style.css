@@ -257,6 +257,10 @@ footer {
 #footer_contacts h1 {
     margin-bottom: 0.75rem;
 }
+#footer_contacts img {
+    width: 150px;
+    border-radius: 20px;
+}
 
 #footer_social_media {
     display: flex;
