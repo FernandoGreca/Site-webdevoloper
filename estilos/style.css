@@ -16,16 +16,10 @@ html {
 }
 
 body {
-    max-width: 1240px;
+    max-width: 1280px;
     margin: 0 auto;
     background-color: #18181B;
-    justify-content: center;
     height: 100vh;
-}
-
-header img {
-    width: 100%;
-    display: flex;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -63,13 +57,15 @@ p {
 /*  Estilo header  */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 40px 4%;
 }
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 header .logo img {
-    max-width: 150px;
+    width: 150px;
     border-radius: 10%;
 }
 header .nav-links {
@@ -79,7 +75,11 @@ header .nav-links {
 header .link ul {
     list-style: none;
 }
+header .nav-link ul li {
+    display: inline;
+}
 header .link a {
+    display: inline-block;
     text-decoration: none;
     color: #5c5c5c;
     font-size: 18px;
@@ -100,8 +100,6 @@ header button:hover {
 
 main {
     display: inline-block; 
-    max-width: 1240px;
-    margin: auto;
     padding: 40px 4%;
     margin-top: 1rem;
     align-items: center;
@@ -145,136 +143,4 @@ main .txt-topo button:hover {
     transition: .3s;
     box-shadow: 2px 2px 7px #039FE2;
     background-color: #03a9f0;
-}
-
-/* Estilos about*/
-
-main section.about {
-    color: white;
-    gap: 2rem;
-    margin-top: 16rem;
-}
-main section.about > h2 {
-    color: #18181B;
-}
-main .img-about img {
-    max-width: 650px;
-}
-main .txt-about {
-    margin: 0 12px;
-}
-main .txt-about h2 {
-    font-size: 26px;
-    margin-bottom: 52px;
-    background-color: #039FE2;
-    width: 286px;
-    height: 1px;
-}
-main .txt-about p {
-    font-size: 16px;
-    margin: 20px 0;
-    line-height: 20px;
-}
-
-/* Estilos pricing*/
-
-main .pricing {
-    margin: 16rem 0;
-    background-color: #00587e;
-    padding-bottom: 20px;
-    border-radius: 5px;
-}
-main .pricing #plan {
-    padding: 5px;
-    text-align: center;
-    margin: 20px 0 30px 0;
-    font-weight: 900;
-    font-size: 30px;
-}
-main .pricing #plan span {
-    color: #039FE2;
-}
-main .pricing .p1 {
-    background-color: #18181B;
-    padding: 10px;
-    width: 400px;
-    margin: 0 70px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.700);
-    border-radius: 20px;
-}
-main .pricing .p1 h2 {
-    text-align: center;
-}
-main .pricing .p1 ul {
-    list-style-position: inside;
-    color: white;
-}
-main .pricing .p1 li {
-    margin-top: 15px;
-    text-align: center;
-}
-main .p1 span.s {
-    color: rgb(139, 139, 139);
-    background-color: rgba(128, 128, 128, 0.100);
-    padding: 5px;
-    border-radius: 5px;
-}
-main .p1 span.g {
-    color: gold;
-    background-color: rgba(255, 217, 0, 0.100);
-    padding: 5px;
-    border-radius: 5px;
-}
-main .p1 span.d {
-    color: lightskyblue;
-    background-color: rgba(135, 206, 250, 0.100);
-    padding: 5px;
-    border-radius: 5px;
-}
-main .p1 h2 {
-    line-height: 50px;
-}
-
-/* Estilos footer*/
-
-footer {
-    padding: 40px 4%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.700);
-    width: 100%;
-}
-footer .flex {
-    justify-content: space-between;
-}
-footer .line-footer {
-    padding: 20px 0;
-}
-.borda {
-    border-top: 2px solid #039FE2;
-}
-footer .line-footer p a {
-    color: black;
-    text-decoration: none;
-}
-footer .line-footer p a:hover {
-    text-decoration: underline;
-}
-footer .line-footer .btn-social {
-    display: flex;
-    align-items: center;
-}
-footer .line-footer .txt-center {
-    display: flex;
-    align-items: center;
-}
-footer .line-footer .btn-social a {
-    text-decoration: none;
-}
-footer .line-footer .btn-social img {
-    border-radius: 50%;
-    width: 60px;
-    margin: 0 10px;
-}
-footer .logo-footer img {
-    height: 90px;
-    width: 120px;
 }
